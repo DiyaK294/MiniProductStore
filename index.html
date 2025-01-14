@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Product Showcase</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to Our Product Store</h2>
+            <p>Discover the best products tailored to your needs.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>Browse through our collection of high-quality items.</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://i5.walmartimages.com/seo/Sony-PlayStation-5-Gaming-Console_b29e7500-cac2-4d1f-b4aa-5e0ebb3de124.c0b04249d968e2c1e5d25799b96ee0e3.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF">
+                    <h3>PS5</h3>
+                    <p>$29.99</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://target.scene7.com/is/image/Target/GUEST_9280c8c7-a9be-4e2c-b450-5c13778438d4?wid=488&hei=488&fmt=pjpeg">
+                    <h3>Mini Roku TV</h3>
+                    <p>$49.99</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://tillmansmeats.com/cdn/shop/products/gift_card-1_1200x1200.jpg?v=1561941105">
+                    <h3>$20.00 Gift Card</h3>
+                    <p>$19.99</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://i5.walmartimages.com/seo/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e.jpeg">
+                    <h3>Bike</h3>
+                    <p>$39.99</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? We're here to help!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Product Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
